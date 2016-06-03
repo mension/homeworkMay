@@ -5,7 +5,7 @@ import (
 )
 
 type Node struct {
-	Value int
+	value int
 }
 
 type Queue struct {
@@ -51,5 +51,5 @@ func main() {
 	q.Push(&Node{1})
 	q.Push(&Node{2})
 	q.Push(&Node{3})
-	fmt.Println(q.Pop().Value, q.Pop().Value, q.Pop().Value, q.Pop())
+	fmt.Println(q.Pop().value, q.Pop().value, q.Pop().value, q.Pop())
 }

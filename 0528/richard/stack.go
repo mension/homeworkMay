@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Node struct {
-	Value int
+	value int
 }
 
 func NewStack() *Stack {
@@ -33,5 +33,5 @@ func main() {
 	s.Push(&Node{1})
 	s.Push(&Node{2})
 	s.Push(&Node{3})
-	fmt.Println(s.Pop().Value, s.Pop().Value, s.Pop().Value, s.Pop())
+	fmt.Println(s.Pop().value, s.Pop().value, s.Pop().value, s.Pop())
 }
